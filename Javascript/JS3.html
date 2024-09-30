@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Loaded</title>
+    
+    <!-- Google Sans Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap">
+    
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Google Sans', sans-serif;
+            font-size: 18pt;
+            font-weight: 500;
+            background-color: #f4f4f9; /* Optional: a light background */
+        }
+    </style>
+</head>
+<body>
+    <div>It's Already Loaded - Page 3</div>
+
+    <script>
+        // Vibrate the device for 500 milliseconds (0.5 second) when the page loads
+        window.onload = function() {
+            if (navigator.vibrate) {
+                navigator.vibrate(500);
+            }
+        };
+    </script>
+</body>
+</html>
